@@ -1,0 +1,29 @@
+/*.ldrs {
+  background: #fff;
+	border: 1px solid #909090;
+	border-radius: 5px;
+}*/
+.ldr{
+  text-align: center;
+}
+.ldr img{
+  align-items: center;
+  margin: 5px auto;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 1px 3px 4px #909090;
+}
+.ldr label {
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ldr label>a {
+  color:#000;
+}
+.ldr label>a:hover {
+  color:#000;
+  text-decoration: none;
+}

@@ -1,0 +1,223 @@
+.col-md-12.bdr {
+  margin: .8em;
+  padding: 0;
+  background: #fff;
+  float: left;
+}
+@media only screen and (min-width: 321px) {
+.col-md-12.bdr {
+	height: 260px;
+}
+.detail{
+  max-height: 100px;
+}
+}
+.no-pad {
+  padding: 0;
+}
+.no-mgn {
+  margin:0 !important;
+}
+.achievement-item:after {
+  position: absolute;
+  content: '';
+  border-left: 1px solid #404040;
+  left: 80%;
+}
+.achievement-item p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.img-circle.img-responsive {
+  width: 120px;
+  height:120px;
+  min-width: 120px;
+}
+
+.card-img {
+  margin: 5px auto;
+  vertical-align: middle;
+  z-index: 99;
+}
+
+
+.T, .T a, .T a:hover {
+  color:#d87f6c;
+}
+.NT a:hover, .T a:hover {
+  text-decoration: none;
+}
+.NT, .NT a, .NT a:hover {
+  color: #479187;
+}
+.T::after, .NT::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.T, .NT {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.T:hover, .NT:hover {
+  -webkit-transform: scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+}
+/*.NT:hover {
+  box-shadow: 8px 6px 10px 2px #808080;
+}*/
+.T:hover::after, .NT:hover::after {
+  opacity: 1;
+}
+.T .img-bg{
+  margin: 0;
+  padding: 0;
+  background: #d87f6c;
+}
+
+.NT .img-bg{
+  margin: 0;
+  padding: 0;
+  background: #479187;
+}
+.T .img-bg .card-img {
+/*box-shadow: 2px 2px 13px 3px #bc6a58;*/
+}
+
+.NT .img-bg .card-img {
+/*box-shadow: 2px 2px 13px 3px #367068;*/
+}
+
+.col-md-12.bdr h3 {
+  margin-top: 0;
+}
+.T h1, .NT h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-shadow: 1px 2px 2px #808080;
+  font-family: 'Julee', cursive;
+}
+.T p,.NT p {
+  font-family: open-sans;
+  font-size: 15px;
+  font-style: italic;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.coin {
+  background: url(./badge.svg);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  color: #d4af37;
+  z-index: 99;
+  line-height: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .achievement-item {
+    min-width: 250px;
+  }
+}
+.detail h1>span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+/* The Modal (background) */
+.teamModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.team-modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.team-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.team-close:hover,
+.team-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.team-modal-header {
+    padding: 2px 16px;
+    background-color: #808080;
+    color: white;
+}
+
+.team-modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}

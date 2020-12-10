@@ -1,0 +1,25 @@
+{
+  "name": "cs-achievers",
+  "version": "1.0.0",
+  "description": "portal will contain information regarding the achievements of students of department",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "rajat sharma",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "firebase": "^4.2.0",
+    "font-awesome": "^4.7.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.10"
+  }
+}
